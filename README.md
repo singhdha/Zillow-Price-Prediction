@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>House Price Prediction using Multilayer Perceptron</title>
 </head>
 <body>
   <h1>House Price Prediction using Multilayer Perceptron</h1>
