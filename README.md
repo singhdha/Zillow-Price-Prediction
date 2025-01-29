@@ -1,65 +1,56 @@
-# Zillow-Price-Prediction
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-  <h1>House Price Prediction using Multilayer Perceptron</h1>
+# 🏠 Zillow iBuying Analysis & House Price Prediction with MLP
 
-  <p>This repository contains the implementation of a house price prediction model using a multilayer perceptron (MLP) neural network. The goal of the project is to predict the sale prices of properties using various features of the houses. The model is built and evaluated using different network architectures and hyperparameters to determine the best approach for accurate predictions.</p>
+**Predicting Real Estate Prices & Evaluating iBuyer Profitability Using Neural Networks**  
+*Inspired by Zillow's Automated Valuation Model (Zestimate) and iBuying Challenges*
 
-  <h2>Key Features:</h2>
-  <ul>
-    <li><strong>Data Preprocessing</strong>: Split the training data into training and validation sets.</li>
-    <li><strong>Model Architectures</strong>: 
-      <ul>
-        <li>A base MLP model with 2 hidden layers of sizes 256 and 128.</li>
-        <li>A more complex MLP model with 4 hidden layers of sizes 512, 256, 128, 64.</li>
-        <li>A final MLP model with 4 hidden layers and dropout layers to prevent overfitting.</li>
-      </ul>
-    </li>
-    <li><strong>Hyperparameter Tuning</strong>: Optimization of the model through the tuning of various hyperparameters.</li>
-    <li><strong>Model Evaluation</strong>: Plot training and validation errors over epochs to visualize model performance.</li>
-  </ul>
+---
 
-  <h2>Project Overview:</h2>
-  <ul>
-    <li><strong>Objective</strong>: Predict house sale prices based on historical data.</li>
-    <li><strong>Approach</strong>: Use a multilayer perceptron (MLP) for regression tasks to predict prices.</li>
-    <li><strong>Data</strong>: Historical housing data, including various features (e.g., square footage, number of rooms, etc.).</li>
-  </ul>
+## 📌 Overview
+This project explores house price prediction using multilayer perceptron (MLP) models and evaluates the profitability of the iBuyer business model, inspired by Zillow's Zestimate algorithm and their discontinued iBuying venture, *Zillow Offers*. The analysis connects machine learning predictions to real-world financial outcomes observed in the case study.
 
-  <h2>Deliverables:</h2>
-  <ol>
-    <li><strong>Training vs Validation Error Plots</strong>:
-      <ul>
-        <li>MLP model with 2 hidden layers (256, 128).</li>
-        <li>MLP model with 4 hidden layers (512, 256, 128, 64).</li>
-        <li>MLP model with 4 hidden layers and dropout layers.</li>
-      </ul>
-    </li>
-    <li><strong>Hyperparameter Tuning Table</strong>: Listing of all model hyperparameters tested and corresponding best validation errors achieved.</li>
-    <li><strong>Profit Analysis of the iBuyer Business Model</strong>: Evaluation of the iBuyer model’s profitability based on predicted house prices.</li>
-  </ol>
+---
 
-  <h2>Requirements:</h2>
-  <ul>
-    <li>Python 3.x</li>
-    <li>TensorFlow/Keras for building the neural network</li>
-    <li>NumPy, Pandas for data manipulation</li>
-    <li>Matplotlib for plotting</li>
-  </ul>
+## 🚀 Key Features  
+🔹 **Data Preprocessing**  
+- Split training data into training/validation sets.  
+- Handle missing values and feature scaling.  
 
-  <h2>How to Run:</h2>
-  <ol>
-    <li>Clone the repository.</li>
-    <li>Install the necessary dependencies from <code>requirements.txt</code>.</li>
-    <li>Run the Jupyter notebook <code>HousePricePrediction.ipynb</code> to train and evaluate the models.</li>
-    <li>Review the generated plots and profit analysis in the report.</li>
-  </ol>
+🔹 **MLP Model Architectures**  
+- **Base Model**: 2 hidden layers (256, 128 units).  
+- **Complex Model**: 4 hidden layers (512, 256, 128, 64 units).  
+- **Regularized Model**: 4 hidden layers + dropout layers to prevent overfitting.  
 
-</body>
-</html>
+🔹 **Hyperparameter Tuning**  
+- Optimize learning rate, batch size, and dropout rates.  
+- Track performance using validation errors.  
 
+🔹 **Profit Analysis**  
+- Simulate iBuyer profitability using predicted vs. actual prices.  
+- Evaluate risks akin to Zillow’s $1.6B loss in iBuying.  
+
+---
+
+## 📊 Deliverables  
+1. **Training vs. Validation Error Plots**  
+   - Compare performance across model architectures.  
+2. **Hyperparameter Tuning Table**  
+   - Document best configurations and validation errors.  
+3. **iBuyer Profit Analysis Report**  
+   - Assess financial viability using Zillow Offers’ case study insights.  
+
+---
+
+## 📂 Case Study Context  
+- **Zillow Offers**: Discontinued in 2021 after accumulating $1.6B losses.  
+- **Challenges**: Overpriced acquisitions, market volatility, and operational inefficiencies.  
+- **Connection**: This project evaluates how accurate price predictions could mitigate such risks.  
+
+---
+
+## ⚙️ Tech Stack  
+- **Python 3.x**  
+- **TensorFlow/Keras** for MLP implementation.  
+- **Pandas/NumPy** for data manipulation.  
+- **Matplotlib/Seaborn** for visualizations.  
+
+---
